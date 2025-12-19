@@ -1,5 +1,5 @@
-baseURL = 'https://chiho.me/'
-title = 'My New Hugo Site'
+baseURL = 'https://chiho.one/'
+title = 'chiho.one'
 theme = 'hugo-book'
 
 # Multi-language configuration
