@@ -5,9 +5,21 @@ theme = 'hugo-book'
 # Multi-language configuration
 defaultContentLanguage = 'ko'
 
+# Enable robots.txt generation
+enableRobotsTXT = true
+
+# Enable git info for last modified dates
+enableGitInfo = true
+
 # Needed for hugo-book theme shortcodes
 [markup.goldmark.renderer]
   unsafe = true
+
+# Sitemap configuration
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [languages]
   [languages.ko]
