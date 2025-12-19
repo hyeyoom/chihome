@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>블로그 운영 가이드 on My New Hugo Site</title>
+    <title>블로그 운영 가이드 on chiho.one</title>
     <link>http://localhost:1313/docs/guide/</link>
-    <description>Recent content in 블로그 운영 가이드 on My New Hugo Site</description>
+    <description>Recent content in 블로그 운영 가이드 on chiho.one</description>
     <generator>Hugo</generator>
     <language>ko</language>
     <atom:link href="http://localhost:1313/docs/guide/index.xml" rel="self" type="application/rss+xml" />
