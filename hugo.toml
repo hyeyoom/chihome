@@ -3,7 +3,7 @@ title = 'chiho.one'
 theme = 'hugo-book'
 
 # Multi-language configuration
-defaultContentLanguage = 'ko'
+defaultContentLanguage = 'en'
 
 # Enable robots.txt generation
 enableRobotsTXT = true
@@ -25,12 +25,14 @@ disableKinds = ['taxonomy', 'term']
   priority = 0.5
 
 [languages]
-  [languages.ko]
-    languageName = '한국어'
-    contentDir = 'content.ko'
-    weight = 1
-
   [languages.en]
-    languageName = 'English'
-    contentDir = 'content.en'
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.ko]
+    languageName = "한국어"
+    languageCode = "ko"
     weight = 2
+    contentDir = "content/ko"
