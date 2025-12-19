@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>문서 on My New Hugo Site</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in 문서 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 시작하기</title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description>&lt;h1 id=&#34;hugo-시작하기&#34;&gt;Hugo 시작하기&lt;a class=&#34;anchor&#34; href=&#34;#hugo-%ec%8b%9c%ec%9e%91%ed%95%98%ea%b8%b0&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Hugo와 hugo-book 테마를 사용한 첫 번째 포스트입니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hugo란&#34;&gt;Hugo란?&lt;a class=&#34;anchor&#34; href=&#34;#hugo%eb%9e%80&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Hugo는 Go로 작성된 정적 사이트 생성기(Static Site Generator)입니다. 빠른 빌드 속도와 간단한 사용법이 특징입니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;주요-특징&#34;&gt;주요 특징&lt;a class=&#34;anchor&#34; href=&#34;#%ec%a3%bc%ec%9a%94-%ed%8a%b9%ec%a7%95&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;빠른 속도&lt;/strong&gt;: Go 언어로 작성되어 매우 빠른 빌드 속도&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;간편한 사용&lt;/strong&gt;: 복잡한 설정 없이 바로 시작 가능&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;다국어 지원&lt;/strong&gt;: 기본적으로 다국어 사이트 구축 지원&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;풍부한 테마&lt;/strong&gt;: 다양한 무료 테마 제공&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;hugo-book-테마&#34;&gt;hugo-book 테마&lt;a class=&#34;anchor&#34; href=&#34;#hugo-book-%ed%85%8c%eb%a7%88&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;이 사이트는 hugo-book 테마를 사용하고 있습니다. hugo-book은 문서 작성에 최적화된 깔끔한 디자인의 테마입니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

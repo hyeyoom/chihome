@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SEO Optimization# Learn how to improve your blog’s visibility through Search Engine Optimization (SEO).
+Basic SEO Configuration# hugo.toml Settings# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;en-us&#39; # Google Analytics (optional) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # Author information [author] name = &#39;Author Name&#39; email = &#39;email@example.com&#39; # Social media [params] description = &#39;Blog description&#39; keywords = [&#39;keyword1&#39;, &#39;keyword2&#39;, &#39;keyword3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo automatically generates robots.txt. To customize:
+# hugo.toml enableRobotsTXT = trueCreate layouts/robots.txt:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/en/docs/guide/seo-optimization/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="SEO Optimization">
+  <meta property="og:description" content="SEO Optimization# Learn how to improve your blog’s visibility through Search Engine Optimization (SEO).
+Basic SEO Configuration# hugo.toml Settings# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;en-us&#39; # Google Analytics (optional) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # Author information [author] name = &#39;Author Name&#39; email = &#39;email@example.com&#39; # Social media [params] description = &#39;Blog description&#39; keywords = [&#39;keyword1&#39;, &#39;keyword2&#39;, &#39;keyword3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo automatically generates robots.txt. To customize:
+# hugo.toml enableRobotsTXT = trueCreate layouts/robots.txt:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="SEO Optimization">
+  <meta itemprop="description" content="SEO Optimization# Learn how to improve your blog’s visibility through Search Engine Optimization (SEO).
+Basic SEO Configuration# hugo.toml Settings# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;en-us&#39; # Google Analytics (optional) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # Author information [author] name = &#39;Author Name&#39; email = &#39;email@example.com&#39; # Social media [params] description = &#39;Blog description&#39; keywords = [&#39;keyword1&#39;, &#39;keyword2&#39;, &#39;keyword3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo automatically generates robots.txt. To customize:
+# hugo.toml enableRobotsTXT = trueCreate layouts/robots.txt:">
+  <meta itemprop="wordCount" content="589">
+
+<title>SEO Optimization | My New Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/en/docs/guide/seo-optimization/">
+  <link rel="alternate" hreflang="ko" href="http://localhost:1313/docs/guide/seo-optimization/" title="SEO 최적화">
+<link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.37863ee4e63828f3e5157e1ef098f7002750c03985b2d37578024cc60c0a67d4.js" integrity="sha256-N4Y&#43;5OY4KPPlFX4e8Jj3ACdQwDmFstN1eAJMxgwKZ9Q=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex">
+      <a role="button">
+        <img src="/icons/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/docs/guide/seo-optimization/" class="flex flex-auto">
+          한국어
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/en/docs/getting-started/" class="">
+      Getting Started with Hugo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/en/docs/guide/" class="">
+      Blog Management Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/en/docs/guide/writing-posts/" class="">
+      Writing Posts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/en/docs/guide/organizing-content/" class="">
+      Organizing Content</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/en/docs/guide/seo-optimization/" class="active">
+      SEO Optimization</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>SEO Optimization</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-seo-configuration">Basic SEO Configuration</a>
+      <ul>
+        <li><a href="#hugotoml-settings">hugo.toml Settings</a></li>
+        <li><a href="#robotstxt">Robots.txt</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-optimization">Front Matter Optimization</a>
+      <ul>
+        <li><a href="#title-writing-tips">Title Writing Tips</a></li>
+        <li><a href="#description-writing-tips">Description Writing Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#sitemap-configuration">Sitemap Configuration</a>
+      <ul>
+        <li><a href="#customizing-sitemap">Customizing Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#url-structure">URL Structure</a>
+      <ul>
+        <li><a href="#clean-urls">Clean URLs</a></li>
+        <li><a href="#permalinks-configuration">Permalinks Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#performance-optimization">Performance Optimization</a>
+      <ul>
+        <li><a href="#image-optimization">Image Optimization</a></li>
+        <li><a href="#minification">Minification</a></li>
+      </ul>
+    </li>
+    <li><a href="#structured-data-schemaorg">Structured Data (Schema.org)</a>
+      <ul>
+        <li><a href="#article-schema">Article Schema</a></li>
+      </ul>
+    </li>
+    <li><a href="#open-graph--twitter-cards">Open Graph &amp; Twitter Cards</a></li>
+    <li><a href="#multi-language-seo">Multi-language SEO</a>
+      <ul>
+        <li><a href="#hreflang-tags">hreflang Tags</a></li>
+        <li><a href="#per-language-sitemap">Per-language Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#content-optimization">Content Optimization</a>
+      <ul>
+        <li><a href="#heading-structure">Heading Structure</a></li>
+        <li><a href="#internal-linking">Internal Linking</a></li>
+        <li><a href="#keyword-usage">Keyword Usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#analytics-and-monitoring">Analytics and Monitoring</a>
+      <ul>
+        <li><a href="#google-analytics">Google Analytics</a></li>
+        <li><a href="#google-search-console">Google Search Console</a></li>
+        <li><a href="#performance-measurement-tools">Performance Measurement Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#checklist">Checklist</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="seo-optimization">SEO Optimization<a class="anchor" href="#seo-optimization">#</a></h1>
+<p>Learn how to improve your blog&rsquo;s visibility through Search Engine Optimization (SEO).</p>
+<h2 id="basic-seo-configuration">Basic SEO Configuration<a class="anchor" href="#basic-seo-configuration">#</a></h2>
+<h3 id="hugotoml-settings">hugo.toml Settings<a class="anchor" href="#hugotoml-settings">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://chiho.me/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My Blog&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Google Analytics (optional)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#39;G-XXXXXXXXXX&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Author information</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">author</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#39;Author Name&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#39;email@example.com&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Social media</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#39;Blog description&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">keywords</span> = [<span style="color:#e6db74">&#39;keyword1&#39;</span>, <span style="color:#e6db74">&#39;keyword2&#39;</span>, <span style="color:#e6db74">&#39;keyword3&#39;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">images</span> = [<span style="color:#e6db74">&#39;/images/og-image.jpg&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#39;username&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">github</span> = <span style="color:#e6db74">&#39;username&#39;</span></span></span></code></pre></div><h3 id="robotstxt">Robots.txt<a class="anchor" href="#robotstxt">#</a></h3>
+<p>Hugo automatically generates robots.txt. To customize:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div><p>Create <code>layouts/robots.txt</code>:</p>
+<pre tabindex="0"><code>User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml</code></pre><h2 id="front-matter-optimization">Front Matter Optimization<a class="anchor" href="#front-matter-optimization">#</a></h2>
+<p>Optimize metadata for each post:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Clear and Descriptive Title (under 60 chars)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Summary of page content (under 155 chars)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2025-12-19T20:00:00</span><span style="color:#ae81ff">+09</span>:<span style="color:#ae81ff">00</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># SEO metadata</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">keywords</span>: [<span style="color:#e6db74">&#34;keyword1&#34;</span>, <span style="color:#e6db74">&#34;keyword2&#34;</span>, <span style="color:#e6db74">&#34;keyword3&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;Author Name&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Open Graph (social media sharing)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">images</span>: [<span style="color:#e6db74">&#34;/images/post-image.jpg&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Search engine crawling control</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">robots</span>: <span style="color:#e6db74">&#34;index, follow&#34;</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="title-writing-tips">Title Writing Tips<a class="anchor" href="#title-writing-tips">#</a></h3>
+<ol>
+<li><strong>Length</strong>: 50-60 characters</li>
+<li><strong>Keywords</strong>: Place important keywords at the beginning</li>
+<li><strong>Uniqueness</strong>: Unique title for each page</li>
+<li><strong>Meaning</strong>: Clear title that encourages clicks</li>
+</ol>
+<p>Examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Good</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Complete Guide to Hugo Blog SEO Optimization&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Bad</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Blog Post 1&#34;</span></span></span></code></pre></div><h3 id="description-writing-tips">Description Writing Tips<a class="anchor" href="#description-writing-tips">#</a></h3>
+<ol>
+<li><strong>Length</strong>: 120-155 characters</li>
+<li><strong>Summary</strong>: Accurately summarize page content</li>
+<li><strong>Call-to-Action</strong>: Include phrases that encourage clicks</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Detailed guide on SEO configuration methods and best practices for Hugo static sites.&#34;</span></span></span></code></pre></div><h2 id="sitemap-configuration">Sitemap Configuration<a class="anchor" href="#sitemap-configuration">#</a></h2>
+<p>Hugo automatically generates sitemap.xml.</p>
+<h3 id="customizing-sitemap">Customizing Sitemap<a class="anchor" href="#customizing-sitemap">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">sitemap</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">changefreq</span> = <span style="color:#e6db74">&#39;weekly&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filename</span> = <span style="color:#e6db74">&#39;sitemap.xml&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">priority</span> = <span style="color:#ae81ff">0.5</span></span></span></code></pre></div><p>Per-page configuration in Front Matter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Important Page&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sitemap</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">priority</span>: <span style="color:#ae81ff">1.0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">changefreq</span>: <span style="color:#ae81ff">daily</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="url-structure">URL Structure<a class="anchor" href="#url-structure">#</a></h2>
+<h3 id="clean-urls">Clean URLs<a class="anchor" href="#clean-urls">#</a></h3>
+<p>Hugo generates clean URLs by default:</p>
+<pre tabindex="0"><code>/docs/getting-started/  (good)
+/docs/getting-started.html  (not recommended)</code></pre><h3 id="permalinks-configuration">Permalinks Configuration<a class="anchor" href="#permalinks-configuration">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">permalinks</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">posts</span> = <span style="color:#e6db74">&#39;/blog/:year/:month/:slug/&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">docs</span> = <span style="color:#e6db74">&#39;/docs/:slug/&#39;</span></span></span></code></pre></div><p>Examples:</p>
+<pre tabindex="0"><code>/blog/2025/12/my-post/
+/docs/getting-started/</code></pre><h2 id="performance-optimization">Performance Optimization<a class="anchor" href="#performance-optimization">#</a></h2>
+<h3 id="image-optimization">Image Optimization<a class="anchor" href="#image-optimization">#</a></h3>
+<ol>
+<li><strong>Appropriate Size</strong>: Resize to needed dimensions</li>
+<li><strong>Compression</strong>: Use WebP, JPEG compression</li>
+<li><strong>Lazy Loading</strong>: Apply lazy loading</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Description</span>](<span style="color:#a6e22e">/images/photo.jpg &#34;Title&#34;</span>)</span></span></code></pre></div><p>Using Hugo Page Resources:</p>
+<pre tabindex="0"><code>content.en/
+  docs/
+    my-post/
+      index.md
+      featured.jpg</code></pre><h3 id="minification">Minification<a class="anchor" href="#minification">#</a></h3>
+<p>Automatic compression on build:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">minify</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableHTML</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableCSS</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableJS</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableJSON</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableXML</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></div><h2 id="structured-data-schemaorg">Structured Data (Schema.org)<a class="anchor" href="#structured-data-schemaorg">#</a></h2>
+<h3 id="article-schema">Article Schema<a class="anchor" href="#article-schema">#</a></h3>
+<p>Create <code>layouts/_default/single.html</code> or partial:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/ld+json&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;@context&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://schema.org&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Article&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;headline&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Title }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;description&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Description }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;author&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Person&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Site.Author.name }}&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;datePublished&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Date.Format &#34;</span><span style="color:#ae81ff">2006</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">02</span><span style="color:#e6db74">&#34; }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;dateModified&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Lastmod.Format &#34;</span><span style="color:#ae81ff">2006</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">02</span><span style="color:#e6db74">&#34; }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;image&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Params.images | default .Site.Params.images }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;url&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div><h2 id="open-graph--twitter-cards">Open Graph &amp; Twitter Cards<a class="anchor" href="#open-graph--twitter-cards">#</a></h2>
+<p>hugo-book theme supports basic Open Graph. Additional configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Post Title&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Post description&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">images</span>: [<span style="color:#e6db74">&#34;/images/og-image.jpg&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Twitter Card</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">twitter</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">card</span>: <span style="color:#e6db74">&#34;summary_large_image&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">site</span>: <span style="color:#e6db74">&#34;@username&#34;</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="multi-language-seo">Multi-language SEO<a class="anchor" href="#multi-language-seo">#</a></h2>
+<h3 id="hreflang-tags">hreflang Tags<a class="anchor" href="#hreflang-tags">#</a></h3>
+<p>Hugo automatically generates hreflang tags:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alternate&#34;</span> <span style="color:#a6e22e">hreflang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ko&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://chiho.me/ko/docs/post/&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alternate&#34;</span> <span style="color:#a6e22e">hreflang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://chiho.me/en/docs/post/&#34;</span> /&gt;</span></span></code></pre></div><h3 id="per-language-sitemap">Per-language Sitemap<a class="anchor" href="#per-language-sitemap">#</a></h3>
+<p>Separate sitemap for each language:</p>
+<pre tabindex="0"><code>/ko/sitemap.xml
+/en/sitemap.xml
+/sitemap.xml (combined)</code></pre><h2 id="content-optimization">Content Optimization<a class="anchor" href="#content-optimization">#</a></h2>
+<h3 id="heading-structure">Heading Structure<a class="anchor" href="#heading-structure">#</a></h3>
+<p>Use proper heading hierarchy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># H1 - Page Title (only one)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## H2 - Main Sections
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### H3 - Sub-sections
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>#### H4 - Detailed Items</span></span></code></pre></div><h3 id="internal-linking">Internal Linking<a class="anchor" href="#internal-linking">#</a></h3>
+<p>Link related content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>For more details, see [<span style="color:#f92672">Writing Posts</span>](<span style="color:#a6e22e">{{&lt; relref &#34;writing-posts&#34; &gt;}}</span>).</span></span></code></pre></div><h3 id="keyword-usage">Keyword Usage<a class="anchor" href="#keyword-usage">#</a></h3>
+<ul>
+<li>Include main keywords in title and first paragraph</li>
+<li>Distribute keywords naturally throughout content</li>
+<li>Avoid keyword stuffing</li>
+</ul>
+<h2 id="analytics-and-monitoring">Analytics and Monitoring<a class="anchor" href="#analytics-and-monitoring">#</a></h2>
+<h3 id="google-analytics">Google Analytics<a class="anchor" href="#google-analytics">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#39;G-XXXXXXXXXX&#39;</span></span></span></code></pre></div><h3 id="google-search-console">Google Search Console<a class="anchor" href="#google-search-console">#</a></h3>
+<ol>
+<li>Verify site ownership</li>
+<li>Submit sitemap: <code>https://chiho.me/sitemap.xml</code></li>
+<li>Monitor crawling errors</li>
+<li>Analyze search performance</li>
+</ol>
+<h3 id="performance-measurement-tools">Performance Measurement Tools<a class="anchor" href="#performance-measurement-tools">#</a></h3>
+<ul>
+<li><strong>Google PageSpeed Insights</strong>: Page speed analysis</li>
+<li><strong>Lighthouse</strong>: Overall quality assessment</li>
+<li><strong>GTmetrix</strong>: Performance and optimization suggestions</li>
+</ul>
+<h2 id="checklist">Checklist<a class="anchor" href="#checklist">#</a></h2>
+<p>Before publishing:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Clear and descriptive title (under 60 chars)</li>
+<li><input disabled="" type="checkbox"> Appropriate description (under 155 chars)</li>
+<li><input disabled="" type="checkbox"> Keywords configured</li>
+<li><input disabled="" type="checkbox"> Image alt text added</li>
+<li><input disabled="" type="checkbox"> Internal links included</li>
+<li><input disabled="" type="checkbox"> Proper heading structure</li>
+<li><input disabled="" type="checkbox"> Open Graph image set</li>
+<li><input disabled="" type="checkbox"> URL structure verified</li>
+<li><input disabled="" type="checkbox"> Mobile-friendly tested</li>
+<li><input disabled="" type="checkbox"> Page loading speed checked</li>
+</ul>
+<h2 id="additional-resources">Additional Resources<a class="anchor" href="#additional-resources">#</a></h2>
+<ul>
+<li><a href="https://developers.google.com/search">Google Search Central</a></li>
+<li><a href="https://gohugo.io/templates/embedded/#open-graph">Hugo SEO Documentation</a></li>
+<li><a href="https://schema.org/">Schema.org</a></li>
+<li><a href="https://web.dev/learn-core-web-vitals/">Web.dev</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/en/docs/guide/organizing-content/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Organizing Content</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-seo-configuration">Basic SEO Configuration</a>
+      <ul>
+        <li><a href="#hugotoml-settings">hugo.toml Settings</a></li>
+        <li><a href="#robotstxt">Robots.txt</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-optimization">Front Matter Optimization</a>
+      <ul>
+        <li><a href="#title-writing-tips">Title Writing Tips</a></li>
+        <li><a href="#description-writing-tips">Description Writing Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="#sitemap-configuration">Sitemap Configuration</a>
+      <ul>
+        <li><a href="#customizing-sitemap">Customizing Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#url-structure">URL Structure</a>
+      <ul>
+        <li><a href="#clean-urls">Clean URLs</a></li>
+        <li><a href="#permalinks-configuration">Permalinks Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#performance-optimization">Performance Optimization</a>
+      <ul>
+        <li><a href="#image-optimization">Image Optimization</a></li>
+        <li><a href="#minification">Minification</a></li>
+      </ul>
+    </li>
+    <li><a href="#structured-data-schemaorg">Structured Data (Schema.org)</a>
+      <ul>
+        <li><a href="#article-schema">Article Schema</a></li>
+      </ul>
+    </li>
+    <li><a href="#open-graph--twitter-cards">Open Graph &amp; Twitter Cards</a></li>
+    <li><a href="#multi-language-seo">Multi-language SEO</a>
+      <ul>
+        <li><a href="#hreflang-tags">hreflang Tags</a></li>
+        <li><a href="#per-language-sitemap">Per-language Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#content-optimization">Content Optimization</a>
+      <ul>
+        <li><a href="#heading-structure">Heading Structure</a></li>
+        <li><a href="#internal-linking">Internal Linking</a></li>
+        <li><a href="#keyword-usage">Keyword Usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#analytics-and-monitoring">Analytics and Monitoring</a>
+      <ul>
+        <li><a href="#google-analytics">Google Analytics</a></li>
+        <li><a href="#google-search-console">Google Search Console</a></li>
+        <li><a href="#performance-measurement-tools">Performance Measurement Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#checklist">Checklist</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

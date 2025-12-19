@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SEO 최적화# 검색 엔진 최적화(SEO)를 통해 블로그의 가시성을 높이는 방법을 알아봅니다.
+기본 SEO 설정# hugo.toml 설정# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;ko-kr&#39; # Google Analytics (선택사항) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # 작성자 정보 [author] name = &#39;작성자명&#39; email = &#39;email@example.com&#39; # 소셜 미디어 [params] description = &#39;블로그 설명&#39; keywords = [&#39;키워드1&#39;, &#39;키워드2&#39;, &#39;키워드3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo는 자동으로 robots.txt를 생성합니다. 커스터마이징하려면:
+# hugo.toml enableRobotsTXT = truelayouts/robots.txt 생성:
+User-agent: * Disallow: /admin/ Disallow: /private/ Sitemap: {{ .Site.BaseURL }}sitemap.xmlFront Matter 최적화# 각 포스트의 메타데이터를 최적화하세요:
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/seo-optimization/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="SEO 최적화">
+  <meta property="og:description" content="SEO 최적화# 검색 엔진 최적화(SEO)를 통해 블로그의 가시성을 높이는 방법을 알아봅니다.
+기본 SEO 설정# hugo.toml 설정# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;ko-kr&#39; # Google Analytics (선택사항) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # 작성자 정보 [author] name = &#39;작성자명&#39; email = &#39;email@example.com&#39; # 소셜 미디어 [params] description = &#39;블로그 설명&#39; keywords = [&#39;키워드1&#39;, &#39;키워드2&#39;, &#39;키워드3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo는 자동으로 robots.txt를 생성합니다. 커스터마이징하려면:
+# hugo.toml enableRobotsTXT = truelayouts/robots.txt 생성:
+User-agent: * Disallow: /admin/ Disallow: /private/ Sitemap: {{ .Site.BaseURL }}sitemap.xmlFront Matter 최적화# 각 포스트의 메타데이터를 최적화하세요:">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="SEO 최적화">
+  <meta itemprop="description" content="SEO 최적화# 검색 엔진 최적화(SEO)를 통해 블로그의 가시성을 높이는 방법을 알아봅니다.
+기본 SEO 설정# hugo.toml 설정# baseURL = &#39;https://chiho.me/&#39; title = &#39;My Blog&#39; languageCode = &#39;ko-kr&#39; # Google Analytics (선택사항) googleAnalytics = &#39;G-XXXXXXXXXX&#39; # 작성자 정보 [author] name = &#39;작성자명&#39; email = &#39;email@example.com&#39; # 소셜 미디어 [params] description = &#39;블로그 설명&#39; keywords = [&#39;키워드1&#39;, &#39;키워드2&#39;, &#39;키워드3&#39;] images = [&#39;/images/og-image.jpg&#39;] [params.social] twitter = &#39;username&#39; github = &#39;username&#39;Robots.txt# Hugo는 자동으로 robots.txt를 생성합니다. 커스터마이징하려면:
+# hugo.toml enableRobotsTXT = truelayouts/robots.txt 생성:
+User-agent: * Disallow: /admin/ Disallow: /private/ Sitemap: {{ .Site.BaseURL }}sitemap.xmlFront Matter 최적화# 각 포스트의 메타데이터를 최적화하세요:">
+  <meta itemprop="wordCount" content="572">
+
+<title>SEO 최적화 | My New Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/seo-optimization/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/docs/seo-optimization/" title="SEO Optimization">
+<link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/ko.search.min.1c7f8d4d91d0dae40628f9084215372673a8ac2a5bea2c05195b61bd0ae2ff33.js" integrity="sha256-HH&#43;NTZHQ2uQGKPkIQhU3JnOorCpb6iwFGVthvQri/zM=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex">
+      <a role="button">
+        <img src="/icons/translate.svg" class="book-icon" alt="Languages" />
+        한국어
+      </a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/en/docs/seo-optimization/" class="flex flex-auto">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-started/" class="">
+      Hugo 시작하기</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/writing-posts/" class="">
+      포스트 작성하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/organizing-content/" class="">
+      콘텐츠 구성하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/seo-optimization/" class="active">
+      SEO 최적화</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/guide/" class="">
+      블로그 운영 가이드</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>SEO 최적화</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#기본-seo-설정">기본 SEO 설정</a>
+      <ul>
+        <li><a href="#hugotoml-설정">hugo.toml 설정</a></li>
+        <li><a href="#robotstxt">Robots.txt</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-최적화">Front Matter 최적화</a>
+      <ul>
+        <li><a href="#제목-작성-팁">제목 작성 팁</a></li>
+        <li><a href="#설명description-작성-팁">설명(Description) 작성 팁</a></li>
+      </ul>
+    </li>
+    <li><a href="#sitemap-설정">Sitemap 설정</a>
+      <ul>
+        <li><a href="#sitemap-커스터마이징">Sitemap 커스터마이징</a></li>
+      </ul>
+    </li>
+    <li><a href="#url-구조">URL 구조</a>
+      <ul>
+        <li><a href="#clean-urls">Clean URLs</a></li>
+        <li><a href="#permalinks-설정">Permalinks 설정</a></li>
+      </ul>
+    </li>
+    <li><a href="#성능-최적화">성능 최적화</a>
+      <ul>
+        <li><a href="#이미지-최적화">이미지 최적화</a></li>
+        <li><a href="#minification">Minification</a></li>
+      </ul>
+    </li>
+    <li><a href="#구조화된-데이터-schemaorg">구조화된 데이터 (Schema.org)</a>
+      <ul>
+        <li><a href="#article-schema">Article Schema</a></li>
+      </ul>
+    </li>
+    <li><a href="#open-graph--twitter-cards">Open Graph &amp; Twitter Cards</a></li>
+    <li><a href="#다국어-seo">다국어 SEO</a>
+      <ul>
+        <li><a href="#hreflang-태그">hreflang 태그</a></li>
+        <li><a href="#언어별-sitemap">언어별 Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#콘텐츠-최적화">콘텐츠 최적화</a>
+      <ul>
+        <li><a href="#헤딩-구조">헤딩 구조</a></li>
+        <li><a href="#내부-링크">내부 링크</a></li>
+        <li><a href="#키워드-사용">키워드 사용</a></li>
+      </ul>
+    </li>
+    <li><a href="#분석-및-모니터링">분석 및 모니터링</a>
+      <ul>
+        <li><a href="#google-analytics">Google Analytics</a></li>
+        <li><a href="#google-search-console">Google Search Console</a></li>
+        <li><a href="#성능-측정-도구">성능 측정 도구</a></li>
+      </ul>
+    </li>
+    <li><a href="#체크리스트">체크리스트</a></li>
+    <li><a href="#추가-리소스">추가 리소스</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="seo-최적화">SEO 최적화<a class="anchor" href="#seo-%ec%b5%9c%ec%a0%81%ed%99%94">#</a></h1>
+<p>검색 엔진 최적화(SEO)를 통해 블로그의 가시성을 높이는 방법을 알아봅니다.</p>
+<h2 id="기본-seo-설정">기본 SEO 설정<a class="anchor" href="#%ea%b8%b0%eb%b3%b8-seo-%ec%84%a4%ec%a0%95">#</a></h2>
+<h3 id="hugotoml-설정">hugo.toml 설정<a class="anchor" href="#hugotoml-%ec%84%a4%ec%a0%95">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://chiho.me/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My Blog&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;ko-kr&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Google Analytics (선택사항)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#39;G-XXXXXXXXXX&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 작성자 정보</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">author</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#39;작성자명&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#39;email@example.com&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 소셜 미디어</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#39;블로그 설명&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">keywords</span> = [<span style="color:#e6db74">&#39;키워드1&#39;</span>, <span style="color:#e6db74">&#39;키워드2&#39;</span>, <span style="color:#e6db74">&#39;키워드3&#39;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">images</span> = [<span style="color:#e6db74">&#39;/images/og-image.jpg&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#39;username&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">github</span> = <span style="color:#e6db74">&#39;username&#39;</span></span></span></code></pre></div><h3 id="robotstxt">Robots.txt<a class="anchor" href="#robotstxt">#</a></h3>
+<p>Hugo는 자동으로 robots.txt를 생성합니다. 커스터마이징하려면:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span></span></span></code></pre></div><p><code>layouts/robots.txt</code> 생성:</p>
+<pre tabindex="0"><code>User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml</code></pre><h2 id="front-matter-최적화">Front Matter 최적화<a class="anchor" href="#front-matter-%ec%b5%9c%ec%a0%81%ed%99%94">#</a></h2>
+<p>각 포스트의 메타데이터를 최적화하세요:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;명확하고 설명적인 제목 (60자 이내)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;페이지 내용을 요약하는 설명 (155자 이내)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2025-12-19T20:00:00</span><span style="color:#ae81ff">+09</span>:<span style="color:#ae81ff">00</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># SEO 메타데이터</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">keywords</span>: [<span style="color:#e6db74">&#34;키워드1&#34;</span>, <span style="color:#e6db74">&#34;키워드2&#34;</span>, <span style="color:#e6db74">&#34;키워드3&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">author</span>: <span style="color:#e6db74">&#34;작성자명&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Open Graph (소셜 미디어 공유)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">images</span>: [<span style="color:#e6db74">&#34;/images/post-image.jpg&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 검색 엔진 크롤링 제어</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">robots</span>: <span style="color:#e6db74">&#34;index, follow&#34;</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="제목-작성-팁">제목 작성 팁<a class="anchor" href="#%ec%a0%9c%eb%aa%a9-%ec%9e%91%ec%84%b1-%ed%8c%81">#</a></h3>
+<ol>
+<li><strong>길이</strong>: 50-60자 이내</li>
+<li><strong>키워드</strong>: 중요한 키워드를 앞쪽에 배치</li>
+<li><strong>고유성</strong>: 각 페이지마다 고유한 제목</li>
+<li><strong>의미</strong>: 클릭을 유도하는 명확한 제목</li>
+</ol>
+<p>예시:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># 좋은 예</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Hugo 블로그 SEO 최적화 완벽 가이드&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 나쁜 예</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;블로그 포스트 1&#34;</span></span></span></code></pre></div><h3 id="설명description-작성-팁">설명(Description) 작성 팁<a class="anchor" href="#%ec%84%a4%eb%aa%85description-%ec%9e%91%ec%84%b1-%ed%8c%81">#</a></h3>
+<ol>
+<li><strong>길이</strong>: 120-155자</li>
+<li><strong>요약</strong>: 페이지 내용을 정확히 요약</li>
+<li><strong>Call-to-Action</strong>: 클릭을 유도하는 문구 포함</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Hugo 정적 사이트에서 검색 엔진 최적화를 위한 설정 방법과 베스트 프랙티스를 상세히 설명합니다.&#34;</span></span></span></code></pre></div><h2 id="sitemap-설정">Sitemap 설정<a class="anchor" href="#sitemap-%ec%84%a4%ec%a0%95">#</a></h2>
+<p>Hugo는 자동으로 sitemap.xml을 생성합니다.</p>
+<h3 id="sitemap-커스터마이징">Sitemap 커스터마이징<a class="anchor" href="#sitemap-%ec%bb%a4%ec%8a%a4%ed%84%b0%eb%a7%88%ec%9d%b4%ec%a7%95">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">sitemap</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">changefreq</span> = <span style="color:#e6db74">&#39;weekly&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filename</span> = <span style="color:#e6db74">&#39;sitemap.xml&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">priority</span> = <span style="color:#ae81ff">0.5</span></span></span></code></pre></div><p>Front Matter에서 개별 페이지 설정:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;중요한 페이지&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sitemap</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">priority</span>: <span style="color:#ae81ff">1.0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">changefreq</span>: <span style="color:#ae81ff">daily</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="url-구조">URL 구조<a class="anchor" href="#url-%ea%b5%ac%ec%a1%b0">#</a></h2>
+<h3 id="clean-urls">Clean URLs<a class="anchor" href="#clean-urls">#</a></h3>
+<p>Hugo는 기본적으로 깔끔한 URL을 생성합니다:</p>
+<pre tabindex="0"><code>/docs/getting-started/  (good)
+/docs/getting-started.html  (not recommended)</code></pre><h3 id="permalinks-설정">Permalinks 설정<a class="anchor" href="#permalinks-%ec%84%a4%ec%a0%95">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">permalinks</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">posts</span> = <span style="color:#e6db74">&#39;/blog/:year/:month/:slug/&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">docs</span> = <span style="color:#e6db74">&#39;/docs/:slug/&#39;</span></span></span></code></pre></div><p>예시:</p>
+<pre tabindex="0"><code>/blog/2025/12/my-post/
+/docs/getting-started/</code></pre><h2 id="성능-최적화">성능 최적화<a class="anchor" href="#%ec%84%b1%eb%8a%a5-%ec%b5%9c%ec%a0%81%ed%99%94">#</a></h2>
+<h3 id="이미지-최적화">이미지 최적화<a class="anchor" href="#%ec%9d%b4%eb%af%b8%ec%a7%80-%ec%b5%9c%ec%a0%81%ed%99%94">#</a></h3>
+<ol>
+<li><strong>적절한 크기</strong>: 필요한 크기로 리사이징</li>
+<li><strong>압축</strong>: WebP, JPEG 압축 활용</li>
+<li><strong>Lazy Loading</strong>: 지연 로딩 적용</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">설명</span>](<span style="color:#a6e22e">/images/photo.jpg &#34;제목&#34;</span>)</span></span></code></pre></div><p>Hugo Page Resources 사용:</p>
+<pre tabindex="0"><code>content.ko/
+  docs/
+    my-post/
+      index.md
+      featured.jpg</code></pre><h3 id="minification">Minification<a class="anchor" href="#minification">#</a></h3>
+<p>빌드 시 자동 압축:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">minify</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableHTML</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableCSS</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableJS</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableJSON</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">disableXML</span> = <span style="color:#66d9ef">false</span></span></span></code></pre></div><h2 id="구조화된-데이터-schemaorg">구조화된 데이터 (Schema.org)<a class="anchor" href="#%ea%b5%ac%ec%a1%b0%ed%99%94%eb%90%9c-%eb%8d%b0%ec%9d%b4%ed%84%b0-schemaorg">#</a></h2>
+<h3 id="article-schema">Article Schema<a class="anchor" href="#article-schema">#</a></h3>
+<p><code>layouts/_default/single.html</code> 또는 partial 생성:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/ld+json&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;@context&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://schema.org&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Article&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;headline&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Title }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;description&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Description }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;author&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;@type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Person&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Site.Author.name }}&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;datePublished&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Date.Format &#34;</span><span style="color:#ae81ff">2006</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">02</span><span style="color:#e6db74">&#34; }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;dateModified&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Lastmod.Format &#34;</span><span style="color:#ae81ff">2006</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">02</span><span style="color:#e6db74">&#34; }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;image&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Params.images | default .Site.Params.images }}&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;url&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;</span></span></code></pre></div><h2 id="open-graph--twitter-cards">Open Graph &amp; Twitter Cards<a class="anchor" href="#open-graph--twitter-cards">#</a></h2>
+<p>hugo-book 테마는 기본 Open Graph를 지원합니다. 추가 설정:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;포스트 제목&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;포스트 설명&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">images</span>: [<span style="color:#e6db74">&#34;/images/og-image.jpg&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Twitter Card</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">twitter</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">card</span>: <span style="color:#e6db74">&#34;summary_large_image&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">site</span>: <span style="color:#e6db74">&#34;@username&#34;</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="다국어-seo">다국어 SEO<a class="anchor" href="#%eb%8b%a4%ea%b5%ad%ec%96%b4-seo">#</a></h2>
+<h3 id="hreflang-태그">hreflang 태그<a class="anchor" href="#hreflang-%ed%83%9c%ea%b7%b8">#</a></h3>
+<p>Hugo는 자동으로 hreflang 태그를 생성합니다:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alternate&#34;</span> <span style="color:#a6e22e">hreflang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ko&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://chiho.me/ko/docs/post/&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alternate&#34;</span> <span style="color:#a6e22e">hreflang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://chiho.me/en/docs/post/&#34;</span> /&gt;</span></span></code></pre></div><h3 id="언어별-sitemap">언어별 Sitemap<a class="anchor" href="#%ec%96%b8%ec%96%b4%eb%b3%84-sitemap">#</a></h3>
+<p>각 언어마다 별도의 sitemap이 생성됩니다:</p>
+<pre tabindex="0"><code>/ko/sitemap.xml
+/en/sitemap.xml
+/sitemap.xml (통합)</code></pre><h2 id="콘텐츠-최적화">콘텐츠 최적화<a class="anchor" href="#%ec%bd%98%ed%85%90%ec%b8%a0-%ec%b5%9c%ec%a0%81%ed%99%94">#</a></h2>
+<h3 id="헤딩-구조">헤딩 구조<a class="anchor" href="#%ed%97%a4%eb%94%a9-%ea%b5%ac%ec%a1%b0">#</a></h3>
+<p>올바른 헤딩 계층 사용:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># H1 - 페이지 제목 (하나만)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## H2 - 주요 섹션
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### H3 - 하위 섹션
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>#### H4 - 세부 항목</span></span></code></pre></div><h3 id="내부-링크">내부 링크<a class="anchor" href="#%eb%82%b4%eb%b6%80-%eb%a7%81%ed%81%ac">#</a></h3>
+<p>관련 콘텐츠를 내부 링크로 연결:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>자세한 내용은 [<span style="color:#f92672">포스트 작성하기</span>](<span style="color:#a6e22e">{{&lt; relref &#34;writing-posts&#34; &gt;}}</span>)를 참고하세요.</span></span></code></pre></div><h3 id="키워드-사용">키워드 사용<a class="anchor" href="#%ed%82%a4%ec%9b%8c%eb%93%9c-%ec%82%ac%ec%9a%a9">#</a></h3>
+<ul>
+<li>제목과 첫 단락에 주요 키워드 포함</li>
+<li>자연스럽게 본문에 키워드 분산</li>
+<li>키워드 스터핑(과도한 사용) 피하기</li>
+</ul>
+<h2 id="분석-및-모니터링">분석 및 모니터링<a class="anchor" href="#%eb%b6%84%ec%84%9d-%eb%b0%8f-%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a7%81">#</a></h2>
+<h3 id="google-analytics">Google Analytics<a class="anchor" href="#google-analytics">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#39;G-XXXXXXXXXX&#39;</span></span></span></code></pre></div><h3 id="google-search-console">Google Search Console<a class="anchor" href="#google-search-console">#</a></h3>
+<ol>
+<li>사이트 소유권 확인</li>
+<li>Sitemap 제출: <code>https://chiho.me/sitemap.xml</code></li>
+<li>크롤링 오류 모니터링</li>
+<li>검색 성능 분석</li>
+</ol>
+<h3 id="성능-측정-도구">성능 측정 도구<a class="anchor" href="#%ec%84%b1%eb%8a%a5-%ec%b8%a1%ec%a0%95-%eb%8f%84%ea%b5%ac">#</a></h3>
+<ul>
+<li><strong>Google PageSpeed Insights</strong>: 페이지 속도 분석</li>
+<li><strong>Lighthouse</strong>: 종합 품질 평가</li>
+<li><strong>GTmetrix</strong>: 성능 및 최적화 제안</li>
+</ul>
+<h2 id="체크리스트">체크리스트<a class="anchor" href="#%ec%b2%b4%ed%81%ac%eb%a6%ac%ec%8a%a4%ed%8a%b8">#</a></h2>
+<p>포스트 발행 전 확인 사항:</p>
+<ul>
+<li><input disabled="" type="checkbox"> 명확하고 설명적인 제목 (60자 이내)</li>
+<li><input disabled="" type="checkbox"> 적절한 description (155자 이내)</li>
+<li><input disabled="" type="checkbox"> 키워드 설정</li>
+<li><input disabled="" type="checkbox"> 이미지 alt 텍스트 추가</li>
+<li><input disabled="" type="checkbox"> 내부 링크 포함</li>
+<li><input disabled="" type="checkbox"> 올바른 헤딩 구조</li>
+<li><input disabled="" type="checkbox"> Open Graph 이미지 설정</li>
+<li><input disabled="" type="checkbox"> URL 구조 확인</li>
+<li><input disabled="" type="checkbox"> 모바일 친화성 테스트</li>
+<li><input disabled="" type="checkbox"> 페이지 로딩 속도 확인</li>
+</ul>
+<h2 id="추가-리소스">추가 리소스<a class="anchor" href="#%ec%b6%94%ea%b0%80-%eb%a6%ac%ec%86%8c%ec%8a%a4">#</a></h2>
+<ul>
+<li><a href="https://developers.google.com/search">Google Search Central</a></li>
+<li><a href="https://gohugo.io/templates/embedded/#open-graph">Hugo SEO Documentation</a></li>
+<li><a href="https://schema.org/">Schema.org</a></li>
+<li><a href="https://web.dev/learn-core-web-vitals/">Web.dev</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/organizing-content/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>콘텐츠 구성하기</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/guide/" class="flex align-center">
+        <span>블로그 운영 가이드</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#기본-seo-설정">기본 SEO 설정</a>
+      <ul>
+        <li><a href="#hugotoml-설정">hugo.toml 설정</a></li>
+        <li><a href="#robotstxt">Robots.txt</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-최적화">Front Matter 최적화</a>
+      <ul>
+        <li><a href="#제목-작성-팁">제목 작성 팁</a></li>
+        <li><a href="#설명description-작성-팁">설명(Description) 작성 팁</a></li>
+      </ul>
+    </li>
+    <li><a href="#sitemap-설정">Sitemap 설정</a>
+      <ul>
+        <li><a href="#sitemap-커스터마이징">Sitemap 커스터마이징</a></li>
+      </ul>
+    </li>
+    <li><a href="#url-구조">URL 구조</a>
+      <ul>
+        <li><a href="#clean-urls">Clean URLs</a></li>
+        <li><a href="#permalinks-설정">Permalinks 설정</a></li>
+      </ul>
+    </li>
+    <li><a href="#성능-최적화">성능 최적화</a>
+      <ul>
+        <li><a href="#이미지-최적화">이미지 최적화</a></li>
+        <li><a href="#minification">Minification</a></li>
+      </ul>
+    </li>
+    <li><a href="#구조화된-데이터-schemaorg">구조화된 데이터 (Schema.org)</a>
+      <ul>
+        <li><a href="#article-schema">Article Schema</a></li>
+      </ul>
+    </li>
+    <li><a href="#open-graph--twitter-cards">Open Graph &amp; Twitter Cards</a></li>
+    <li><a href="#다국어-seo">다국어 SEO</a>
+      <ul>
+        <li><a href="#hreflang-태그">hreflang 태그</a></li>
+        <li><a href="#언어별-sitemap">언어별 Sitemap</a></li>
+      </ul>
+    </li>
+    <li><a href="#콘텐츠-최적화">콘텐츠 최적화</a>
+      <ul>
+        <li><a href="#헤딩-구조">헤딩 구조</a></li>
+        <li><a href="#내부-링크">내부 링크</a></li>
+        <li><a href="#키워드-사용">키워드 사용</a></li>
+      </ul>
+    </li>
+    <li><a href="#분석-및-모니터링">분석 및 모니터링</a>
+      <ul>
+        <li><a href="#google-analytics">Google Analytics</a></li>
+        <li><a href="#google-search-console">Google Search Console</a></li>
+        <li><a href="#성능-측정-도구">성능 측정 도구</a></li>
+      </ul>
+    </li>
+    <li><a href="#체크리스트">체크리스트</a></li>
+    <li><a href="#추가-리소스">추가 리소스</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

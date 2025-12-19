@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="콘텐츠 구성하기# 블로그 콘텐츠를 효과적으로 구성하는 방법을 알아봅니다.
+디렉토리 구조# hugo-book 테마는 계층적 디렉토리 구조를 사용합니다:
+content.ko/ ├── docs/ │ ├── _index.md # 섹션 메인 페이지 │ ├── getting-started.md │ ├── tutorials/ # 하위 섹션 │ │ ├── _index.md │ │ ├── tutorial-1.md │ │ └── tutorial-2.md │ └── guides/ │ ├── _index.md │ └── guide-1.md └── posts/ # 블로그 포스트 ├── _index.md └── 2025-01-01-my-post.md카테고리와 태그# Hugo는 Taxonomy 시스템으로 카테고리와 태그를 지원합니다.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/organizing-content/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="콘텐츠 구성하기">
+  <meta property="og:description" content="콘텐츠 구성하기# 블로그 콘텐츠를 효과적으로 구성하는 방법을 알아봅니다.
+디렉토리 구조# hugo-book 테마는 계층적 디렉토리 구조를 사용합니다:
+content.ko/ ├── docs/ │ ├── _index.md # 섹션 메인 페이지 │ ├── getting-started.md │ ├── tutorials/ # 하위 섹션 │ │ ├── _index.md │ │ ├── tutorial-1.md │ │ └── tutorial-2.md │ └── guides/ │ ├── _index.md │ └── guide-1.md └── posts/ # 블로그 포스트 ├── _index.md └── 2025-01-01-my-post.md카테고리와 태그# Hugo는 Taxonomy 시스템으로 카테고리와 태그를 지원합니다.">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="콘텐츠 구성하기">
+  <meta itemprop="description" content="콘텐츠 구성하기# 블로그 콘텐츠를 효과적으로 구성하는 방법을 알아봅니다.
+디렉토리 구조# hugo-book 테마는 계층적 디렉토리 구조를 사용합니다:
+content.ko/ ├── docs/ │ ├── _index.md # 섹션 메인 페이지 │ ├── getting-started.md │ ├── tutorials/ # 하위 섹션 │ │ ├── _index.md │ │ ├── tutorial-1.md │ │ └── tutorial-2.md │ └── guides/ │ ├── _index.md │ └── guide-1.md └── posts/ # 블로그 포스트 ├── _index.md └── 2025-01-01-my-post.md카테고리와 태그# Hugo는 Taxonomy 시스템으로 카테고리와 태그를 지원합니다.">
+  <meta itemprop="wordCount" content="417">
+
+<title>콘텐츠 구성하기 | My New Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/organizing-content/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/docs/organizing-content/" title="Organizing Content">
+<link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/ko.search.min.1c7f8d4d91d0dae40628f9084215372673a8ac2a5bea2c05195b61bd0ae2ff33.js" integrity="sha256-HH&#43;NTZHQ2uQGKPkIQhU3JnOorCpb6iwFGVthvQri/zM=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex">
+      <a role="button">
+        <img src="/icons/translate.svg" class="book-icon" alt="Languages" />
+        한국어
+      </a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/en/docs/organizing-content/" class="flex flex-auto">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-started/" class="">
+      Hugo 시작하기</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/writing-posts/" class="">
+      포스트 작성하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/organizing-content/" class="active">
+      콘텐츠 구성하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/seo-optimization/" class="">
+      SEO 최적화</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/guide/" class="">
+      블로그 운영 가이드</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>콘텐츠 구성하기</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#디렉토리-구조">디렉토리 구조</a></li>
+    <li><a href="#카테고리와-태그">카테고리와 태그</a>
+      <ul>
+        <li><a href="#front-matter에-추가">Front Matter에 추가</a></li>
+        <li><a href="#hugotoml-설정">hugo.toml 설정</a></li>
+        <li><a href="#taxonomy-페이지">Taxonomy 페이지</a></li>
+      </ul>
+    </li>
+    <li><a href="#메뉴-구성">메뉴 구성</a>
+      <ul>
+        <li><a href="#자동-메뉴-file-tree">자동 메뉴 (File Tree)</a></li>
+        <li><a href="#섹션-설정">섹션 설정</a></li>
+        <li><a href="#커스텀-메뉴">커스텀 메뉴</a></li>
+      </ul>
+    </li>
+    <li><a href="#페이지-숨기기">페이지 숨기기</a></li>
+    <li><a href="#검색에서-제외">검색에서 제외</a></li>
+    <li><a href="#다국어-콘텐츠-구성">다국어 콘텐츠 구성</a>
+      <ul>
+        <li><a href="#디렉토리별-분리-현재-설정">디렉토리별 분리 (현재 설정)</a></li>
+        <li><a href="#파일명으로-분리-대안">파일명으로 분리 (대안)</a></li>
+        <li><a href="#번역-연결">번역 연결</a></li>
+      </ul>
+    </li>
+    <li><a href="#정적-파일-구성">정적 파일 구성</a>
+      <ul>
+        <li><a href="#이미지">이미지</a></li>
+        <li><a href="#다운로드-파일">다운로드 파일</a></li>
+        <li><a href="#언어별-정적-파일">언어별 정적 파일</a></li>
+      </ul>
+    </li>
+    <li><a href="#아카이브-구성">아카이브 구성</a>
+      <ul>
+        <li><a href="#날짜별-구성">날짜별 구성</a></li>
+        <li><a href="#주제별-구성">주제별 구성</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-템플릿">Front Matter 템플릿</a>
+      <ul>
+        <li><a href="#archetypesdocsmd">archetypes/docs.md</a></li>
+      </ul>
+    </li>
+    <li><a href="#조직화-팁">조직화 팁</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="콘텐츠-구성하기">콘텐츠 구성하기<a class="anchor" href="#%ec%bd%98%ed%85%90%ec%b8%a0-%ea%b5%ac%ec%84%b1%ed%95%98%ea%b8%b0">#</a></h1>
+<p>블로그 콘텐츠를 효과적으로 구성하는 방법을 알아봅니다.</p>
+<h2 id="디렉토리-구조">디렉토리 구조<a class="anchor" href="#%eb%94%94%eb%a0%89%ed%86%a0%eb%a6%ac-%ea%b5%ac%ec%a1%b0">#</a></h2>
+<p>hugo-book 테마는 계층적 디렉토리 구조를 사용합니다:</p>
+<pre tabindex="0"><code>content.ko/
+├── docs/
+│   ├── _index.md          # 섹션 메인 페이지
+│   ├── getting-started.md
+│   ├── tutorials/          # 하위 섹션
+│   │   ├── _index.md
+│   │   ├── tutorial-1.md
+│   │   └── tutorial-2.md
+│   └── guides/
+│       ├── _index.md
+│       └── guide-1.md
+└── posts/                  # 블로그 포스트
+    ├── _index.md
+    └── 2025-01-01-my-post.md</code></pre><h2 id="카테고리와-태그">카테고리와 태그<a class="anchor" href="#%ec%b9%b4%ed%85%8c%ea%b3%a0%eb%a6%ac%ec%99%80-%ed%83%9c%ea%b7%b8">#</a></h2>
+<p>Hugo는 Taxonomy 시스템으로 카테고리와 태그를 지원합니다.</p>
+<h3 id="front-matter에-추가">Front Matter에 추가<a class="anchor" href="#front-matter%ec%97%90-%ec%b6%94%ea%b0%80">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;포스트 제목&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">categories</span>: [<span style="color:#e6db74">&#34;튜토리얼&#34;</span>, <span style="color:#e6db74">&#34;개발&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;hugo&#34;</span>, <span style="color:#e6db74">&#34;go&#34;</span>, <span style="color:#e6db74">&#34;웹개발&#34;</span>]
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="hugotoml-설정">hugo.toml 설정<a class="anchor" href="#hugotoml-%ec%84%a4%ec%a0%95">#</a></h3>
+<p>카테고리와 태그를 활성화하려면:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># hugo.toml</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#39;categories&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#39;tags&#39;</span></span></span></code></pre></div><p>hugo-book 테마는 기본적으로 taxonomy를 비활성화하므로, 사용하려면 설정에서 활성화해야 합니다.</p>
+<h3 id="taxonomy-페이지">Taxonomy 페이지<a class="anchor" href="#taxonomy-%ed%8e%98%ec%9d%b4%ec%a7%80">#</a></h3>
+<p>Hugo는 자동으로 다음 페이지를 생성합니다:</p>
+<ul>
+<li><code>/categories/</code> - 모든 카테고리 목록</li>
+<li><code>/categories/tutorial/</code> - &ldquo;튜토리얼&rdquo; 카테고리의 포스트</li>
+<li><code>/tags/</code> - 모든 태그 목록</li>
+<li><code>/tags/hugo/</code> - &ldquo;hugo&rdquo; 태그의 포스트</li>
+</ul>
+<h2 id="메뉴-구성">메뉴 구성<a class="anchor" href="#%eb%a9%94%eb%89%b4-%ea%b5%ac%ec%84%b1">#</a></h2>
+<h3 id="자동-메뉴-file-tree">자동 메뉴 (File Tree)<a class="anchor" href="#%ec%9e%90%eb%8f%99-%eb%a9%94%eb%89%b4-file-tree">#</a></h3>
+<p>hugo-book은 기본적으로 <code>content.ko/docs/</code> 디렉토리 구조를 기반으로 사이드바 메뉴를 자동 생성합니다.</p>
+<p>메뉴 순서는 <code>weight</code>로 조정:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;첫 번째 문서&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>  <span style="color:#75715e"># 낮을수록 위에 표시</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="섹션-설정">섹션 설정<a class="anchor" href="#%ec%84%b9%ec%85%98-%ec%84%a4%ec%a0%95">#</a></h3>
+<p>섹션의 <code>_index.md</code>에서 섹션 동작을 제어:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;튜토리얼&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">weight</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bookFlatSection</span>: <span style="color:#66d9ef">false</span>      <span style="color:#75715e"># 하위 항목을 평평하게 표시</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bookCollapseSection</span>: <span style="color:#66d9ef">true</span>   <span style="color:#75715e"># 기본적으로 접힌 상태</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h3 id="커스텀-메뉴">커스텀 메뉴<a class="anchor" href="#%ec%bb%a4%ec%8a%a4%ed%85%80-%eb%a9%94%eb%89%b4">#</a></h3>
+<p>hugo.toml에서 수동으로 메뉴 정의:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">before</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;홈&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">after</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;GitHub&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com/yourusername&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span></span></span></code></pre></div><h2 id="페이지-숨기기">페이지 숨기기<a class="anchor" href="#%ed%8e%98%ec%9d%b4%ec%a7%80-%ec%88%a8%ea%b8%b0%ea%b8%b0">#</a></h2>
+<p>특정 페이지를 메뉴에서 숨기기:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;숨겨진 페이지&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bookHidden</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="검색에서-제외">검색에서 제외<a class="anchor" href="#%ea%b2%80%ec%83%89%ec%97%90%ec%84%9c-%ec%a0%9c%ec%99%b8">#</a></h2>
+<p>검색 결과에서 페이지 제외:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;검색 제외 페이지&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bookSearchExclude</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><h2 id="다국어-콘텐츠-구성">다국어 콘텐츠 구성<a class="anchor" href="#%eb%8b%a4%ea%b5%ad%ec%96%b4-%ec%bd%98%ed%85%90%ec%b8%a0-%ea%b5%ac%ec%84%b1">#</a></h2>
+<h3 id="디렉토리별-분리-현재-설정">디렉토리별 분리 (현재 설정)<a class="anchor" href="#%eb%94%94%eb%a0%89%ed%86%a0%eb%a6%ac%eb%b3%84-%eb%b6%84%eb%a6%ac-%ed%98%84%ec%9e%ac-%ec%84%a4%ec%a0%95">#</a></h3>
+<pre tabindex="0"><code>content.ko/      # 한국어 콘텐츠
+  docs/
+    getting-started.md
+
+content.en/      # 영어 콘텐츠
+  docs/
+    getting-started.md</code></pre><h3 id="파일명으로-분리-대안">파일명으로 분리 (대안)<a class="anchor" href="#%ed%8c%8c%ec%9d%bc%eb%aa%85%ec%9c%bc%eb%a1%9c-%eb%b6%84%eb%a6%ac-%eb%8c%80%ec%95%88">#</a></h3>
+<pre tabindex="0"><code>content/
+  docs/
+    getting-started.ko.md
+    getting-started.en.md</code></pre><h3 id="번역-연결">번역 연결<a class="anchor" href="#%eb%b2%88%ec%97%ad-%ec%97%b0%ea%b2%b0">#</a></h3>
+<p>동일한 콘텐츠의 다국어 버전을 연결하려면 동일한 파일 구조를 유지하세요:</p>
+<pre tabindex="0"><code>content.ko/docs/tutorial.md
+content.en/docs/tutorial.md</code></pre><p>Hugo는 자동으로 언어 전환 링크를 생성합니다.</p>
+<h2 id="정적-파일-구성">정적 파일 구성<a class="anchor" href="#%ec%a0%95%ec%a0%81-%ed%8c%8c%ec%9d%bc-%ea%b5%ac%ec%84%b1">#</a></h2>
+<h3 id="이미지">이미지<a class="anchor" href="#%ec%9d%b4%eb%af%b8%ec%a7%80">#</a></h3>
+<pre tabindex="0"><code>static/
+  images/
+    2025/
+      01/
+        photo.jpg</code></pre><p>사용:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">설명</span>](<span style="color:#a6e22e">/images/2025/01/photo.jpg</span>)</span></span></code></pre></div><h3 id="다운로드-파일">다운로드 파일<a class="anchor" href="#%eb%8b%a4%ec%9a%b4%eb%a1%9c%eb%93%9c-%ed%8c%8c%ec%9d%bc">#</a></h3>
+<pre tabindex="0"><code>static/
+  downloads/
+    document.pdf</code></pre><p>링크:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">PDF 다운로드</span>](<span style="color:#a6e22e">/downloads/document.pdf</span>)</span></span></code></pre></div><h3 id="언어별-정적-파일">언어별 정적 파일<a class="anchor" href="#%ec%96%b8%ec%96%b4%eb%b3%84-%ec%a0%95%ec%a0%81-%ed%8c%8c%ec%9d%bc">#</a></h3>
+<pre tabindex="0"><code>static/
+  ko/
+    images/
+      banner.jpg
+  en/
+    images/
+      banner.jpg</code></pre><h2 id="아카이브-구성">아카이브 구성<a class="anchor" href="#%ec%95%84%ec%b9%b4%ec%9d%b4%eb%b8%8c-%ea%b5%ac%ec%84%b1">#</a></h2>
+<h3 id="날짜별-구성">날짜별 구성<a class="anchor" href="#%eb%82%a0%ec%a7%9c%eb%b3%84-%ea%b5%ac%ec%84%b1">#</a></h3>
+<pre tabindex="0"><code>content.ko/
+  posts/
+    2025/
+      01/
+        post-1.md
+        post-2.md</code></pre><h3 id="주제별-구성">주제별 구성<a class="anchor" href="#%ec%a3%bc%ec%a0%9c%eb%b3%84-%ea%b5%ac%ec%84%b1">#</a></h3>
+<pre tabindex="0"><code>content.ko/
+  docs/
+    backend/
+      _index.md
+      django.md
+      fastapi.md
+    frontend/
+      _index.md
+      react.md
+      vue.md</code></pre><h2 id="front-matter-템플릿">Front Matter 템플릿<a class="anchor" href="#front-matter-%ed%85%9c%ed%94%8c%eb%a6%bf">#</a></h2>
+<p>일관된 메타데이터를 위해 <code>archetypes</code> 사용:</p>
+<h3 id="archetypesdocsmd">archetypes/docs.md<a class="anchor" href="#archetypesdocsmd">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;{{ replace .Name &#34;</span>-<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34; | title }}&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: {{ <span style="color:#ae81ff">.Date }}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">weight</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bookToc</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">categories</span>: []
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: []
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div><p>새 포스트 생성:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new --kind docs content.ko/docs/my-post.md</span></span></code></pre></div><h2 id="조직화-팁">조직화 팁<a class="anchor" href="#%ec%a1%b0%ec%a7%81%ed%99%94-%ed%8c%81">#</a></h2>
+<ol>
+<li><strong>일관된 구조 유지</strong>: 모든 언어에서 동일한 디렉토리 구조 사용</li>
+<li><strong>Weight 체계</strong>: 10, 20, 30&hellip; 처럼 간격을 두어 나중에 삽입 용이</li>
+<li><strong>명명 규칙</strong>: 파일명은 소문자와 하이픈 사용 (예: <code>my-post.md</code>)</li>
+<li><strong>섹션 활용</strong>: 관련 문서를 섹션으로 그룹화</li>
+<li><strong>검색 최적화</strong>: 중요한 키워드를 제목과 설명에 포함</li>
+<li><strong>목차 활용</strong>: 긴 문서는 <code>bookToc: true</code>로 가독성 향상</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/writing-posts/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>포스트 작성하기</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/seo-optimization/" class="flex align-center">
+        <span>SEO 최적화</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#디렉토리-구조">디렉토리 구조</a></li>
+    <li><a href="#카테고리와-태그">카테고리와 태그</a>
+      <ul>
+        <li><a href="#front-matter에-추가">Front Matter에 추가</a></li>
+        <li><a href="#hugotoml-설정">hugo.toml 설정</a></li>
+        <li><a href="#taxonomy-페이지">Taxonomy 페이지</a></li>
+      </ul>
+    </li>
+    <li><a href="#메뉴-구성">메뉴 구성</a>
+      <ul>
+        <li><a href="#자동-메뉴-file-tree">자동 메뉴 (File Tree)</a></li>
+        <li><a href="#섹션-설정">섹션 설정</a></li>
+        <li><a href="#커스텀-메뉴">커스텀 메뉴</a></li>
+      </ul>
+    </li>
+    <li><a href="#페이지-숨기기">페이지 숨기기</a></li>
+    <li><a href="#검색에서-제외">검색에서 제외</a></li>
+    <li><a href="#다국어-콘텐츠-구성">다국어 콘텐츠 구성</a>
+      <ul>
+        <li><a href="#디렉토리별-분리-현재-설정">디렉토리별 분리 (현재 설정)</a></li>
+        <li><a href="#파일명으로-분리-대안">파일명으로 분리 (대안)</a></li>
+        <li><a href="#번역-연결">번역 연결</a></li>
+      </ul>
+    </li>
+    <li><a href="#정적-파일-구성">정적 파일 구성</a>
+      <ul>
+        <li><a href="#이미지">이미지</a></li>
+        <li><a href="#다운로드-파일">다운로드 파일</a></li>
+        <li><a href="#언어별-정적-파일">언어별 정적 파일</a></li>
+      </ul>
+    </li>
+    <li><a href="#아카이브-구성">아카이브 구성</a>
+      <ul>
+        <li><a href="#날짜별-구성">날짜별 구성</a></li>
+        <li><a href="#주제별-구성">주제별 구성</a></li>
+      </ul>
+    </li>
+    <li><a href="#front-matter-템플릿">Front Matter 템플릿</a>
+      <ul>
+        <li><a href="#archetypesdocsmd">archetypes/docs.md</a></li>
+      </ul>
+    </li>
+    <li><a href="#조직화-팁">조직화 팁</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
