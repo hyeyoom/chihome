@@ -11,6 +11,9 @@ enableRobotsTXT = true
 # Enable git info for last modified dates
 enableGitInfo = true
 
+# Disable taxonomy pages (categories, tags) as hugo-book theme doesn't render them
+disableKinds = ['taxonomy', 'term']
+
 # Needed for hugo-book theme shortcodes
 [markup.goldmark.renderer]
   unsafe = true
