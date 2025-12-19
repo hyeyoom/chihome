@@ -11,6 +11,9 @@ enableRobotsTXT = true
 # Enable git info for last modified dates
 enableGitInfo = true
 
+# Google Analytics
+googleAnalytics = 'G-K7FSSS1P3R'
+
 # Disable taxonomy pages (categories, tags) as hugo-book theme doesn't render them
 disableKinds = ['taxonomy', 'term']
 
