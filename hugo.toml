@@ -27,12 +27,10 @@ disableKinds = ['taxonomy', 'term']
 [languages]
   [languages.en]
     languageName = "English"
-    languageCode = "en"
     weight = 1
-    contentDir = "content/en"
+    contentDir = "content.en"
 
   [languages.ko]
     languageName = "한국어"
-    languageCode = "ko"
     weight = 2
-    contentDir = "content/ko"
+    contentDir = "content.ko"
